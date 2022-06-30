@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-30T20:05:51.896Z",
+    "end": "2022-06-30T20:06:11.888Z",
+    "duration": 19992,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b3d4869a-360e-4e86-8bff-734ac39e2d06",
+      "title": "",
+      "fullFile": "cypress/integration/OnTest/Visual_Test.js",
+      "file": "cypress/integration/OnTest/Visual_Test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "752d4c6b-1b59-407b-9a43-a12053ae5389",
+          "title": "On details ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "On details",
+              "fullTitle": "On details  On details",
+              "timedOut": null,
+              "duration": 11023,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.makeScreenshot(\"On with cookie\");",
+              "err": {},
+              "uuid": "c7a92f4b-2fa0-47cd-ab44-e9193d9de486",
+              "parentUUID": "752d4c6b-1b59-407b-9a43-a12053ae5389",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Screenshot after cookie accept",
+              "fullTitle": "On details  Screenshot after cookie accept",
+              "timedOut": null,
+              "duration": 4642,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "CheckOut.getcookieBanner().click();\ncy.makeScreenshot(\"Cookie disappears and page displays\");",
+              "err": {},
+              "uuid": "2abdf06c-fe18-4184-a48e-ee53ab0a2761",
+              "parentUUID": "752d4c6b-1b59-407b-9a43-a12053ae5389",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c7a92f4b-2fa0-47cd-ab44-e9193d9de486",
+            "2abdf06c-fe18-4184-a48e-ee53ab0a2761"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15665,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

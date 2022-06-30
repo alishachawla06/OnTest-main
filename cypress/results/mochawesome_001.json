@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-30T20:03:43.357Z",
+    "end": "2022-06-30T20:05:02.726Z",
+    "duration": 79369,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6b701f8c-7ab8-4b23-ad57-09281e9426ff",
+      "title": "",
+      "fullFile": "cypress/integration/OnTest/Checkout_On.js",
+      "file": "cypress/integration/OnTest/Checkout_On.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "57f04845-f4ba-45c2-bc9f-f99eb0c7f78d",
+          "title": "To Go to the compare page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Checkout",
+              "fullTitle": "To Go to the compare page Checkout",
+              "timedOut": null,
+              "duration": 76424,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "CheckOut.getCategory().click();\ncy.scrollTo(\"bottom\", {\n  duration: 6000\n});\ncy.wait(5000);\nCheckOut.getProduct().click({\n  force: true\n});\nCheckOut.getSize().click({\n  force: true\n});\nCheckOut.getADD().click().wait(3000); //Verify that product is added to the cart\nAssertion.verifyCartisNotEmpty(); //    CheckOut.getcartadded().should('be.visible')\nCheckOut.getSB().click().wait(3000); //Verify url changes when user clicks on Shopping bag icon\ncy.url().should('include', this.data.aftersubmiturl);\nCheckOut.getCheck().click().wait(5000); //verify url changes when user reaches register page\nCheckOut.getEmail().click().type(this.data.Email);\nCheckOut.getProceed().click().wait(5000);\nCheckOut.getFname().click().type(this.data.Firstname);\nCheckOut.getLname().click().type(this.data.Lastname);\nCheckOut.getAddress().click().type(this.data.Address);\nCheckOut.getZip().click().type(this.data.zip);\nCheckOut.getCity().click().type(this.data.city);\nCheckOut.getPhone().click().type(this.data.Mobile);\nCheckOut.getButton().click();\nCheckOut.getPayment().click().wait(5000);\nCheckOut.getPaymentMethodCreditCard().click();\ncy.wait(3000);\nCheckOut.getCardNo().click().type(this.data.Card);\nCheckOut.getExpiryDate().click().type(this.data.date);\nCheckOut.getCVC().click().type(this.data.CVC); //cy.iframe('.adyen-checkout__card-input .adyen-checkout__input[data-cse=\"encryptedCardNumber\"] iframe').find('#encryptedSecurityCode').click().type('223')\n//CheckOut.getDate().click().type(this.data.date)\n// CheckOut.getCVC().click().type(this.data.CVC)\nCheckOut.getNameoncard().click().type(this.data.Nameoncard);\nCheckOut.getSubmitCard().click();\nAssertion.verifyOrderConfirmationText(this.data.orderConfirmationText); // cy.get('.confirmation-container__subtitle').should(\"contain.text\",\"You'll receive a confirmation email shortly at ontest@gmail.com\")",
+              "err": {},
+              "uuid": "f65863af-8a3e-474b-8114-9afbe3d45e38",
+              "parentUUID": "57f04845-f4ba-45c2-bc9f-f99eb0c7f78d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f65863af-8a3e-474b-8114-9afbe3d45e38"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 76424,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-06-30T20:03:26.600Z",
+    "end": "2022-06-30T20:03:38.835Z",
+    "duration": 12235,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c8ea6904-daaa-4fff-bc75-26421d2a013a",
+      "title": "",
+      "fullFile": "cypress/integration/OnTest/Accessibilty_On.js",
+      "file": "cypress/integration/OnTest/Accessibilty_On.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7c8bce5a-fb7d-4ba9-8eb8-7aabed1e4f3c",
+          "title": "Accessibility Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Accessibility",
+              "fullTitle": "Accessibility Test Accessibility",
+              "timedOut": null,
+              "duration": 5568,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.checkA11y();",
+              "err": {
+                "message": "AssertionError: 8 accessibility violations were detected: expected 8 to equal 0",
+                "estack": "AssertionError: 8 accessibility violations were detected: expected 8 to equal 0\n    at Context.eval (https://staging-beta.on-running.com/__cypress/tests?p=cypress/support/index.js:24037:20)",
+                "diff": null
+              },
+              "uuid": "63b1709e-37e3-4a8f-8b58-ce8c808cfff5",
+              "parentUUID": "7c8bce5a-fb7d-4ba9-8eb8-7aabed1e4f3c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Include only P1, P2 issues",
+              "fullTitle": "Accessibility Test Include only P1, P2 issues",
+              "timedOut": null,
+              "duration": 3684,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.checkA11y(null, {\n  includedImpacts: [\"critical\", [\"serious\"]]\n});",
+              "err": {
+                "message": "AssertionError: 2 accessibility violations were detected: expected 2 to equal 0",
+                "estack": "AssertionError: 2 accessibility violations were detected: expected 2 to equal 0\n    at Context.eval (https://staging-beta.on-running.com/__cypress/tests?p=cypress/support/index.js:24037:20)",
+                "diff": null
+              },
+              "uuid": "dccfc769-69a6-4be6-a1fe-5982f49e020c",
+              "parentUUID": "7c8bce5a-fb7d-4ba9-8eb8-7aabed1e4f3c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "63b1709e-37e3-4a8f-8b58-ce8c808cfff5",
+            "dccfc769-69a6-4be6-a1fe-5982f49e020c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9252,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
