@@ -1,0 +1,18 @@
+{
+  "Email":"ontest@gmail.com",
+  "Firstname": "Test",
+  "Lastname": "User",
+  "Address":"70B",
+  "zip": "82008",
+  "city": "Münich.",
+   "Mobile": "+4915143387552",
+   "Card": "3700 0000 0100 018",
+   "date": "03/30",
+   "CVC": "7373",
+   "Nameoncard": "Test User",
+   "aftersubmiturl": "https://staging-beta.on-running.com/en-de/cart",
+   "": "https://staging-beta.on-running.com/en-de/checkout/registration",
+   "checkouturl": "https://staging-beta.on-running.com/en-de/checkout/shipping",
+   "pagetitle": "",
+   "orderConfirmationText": "You'll receive a confirmation email shortly at ontest@gmail.com"
+}
